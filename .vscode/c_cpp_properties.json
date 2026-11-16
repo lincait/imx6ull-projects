@@ -3,7 +3,6 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/**",
                 "/home/lincait/linux/linux_kernal/alientek_linux/include/",
                 "/home/lincait/linux/linux_kernal/alientek_linux/arch/arm/include/",
                 "/home/lincait/linux/linux_kernal/alientek_linux/arch/arm/include/generated/"
