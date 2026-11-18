@@ -78,7 +78,10 @@ void led_switch(u8 sta)
  */
 static int led_open(struct inode *inode, struct file *flip)
 {
-    flip->private_data = &newchrled; // 设置私有数据 
+    // 设置私有数据
+    // 在.open中记录下打开的设备是哪个。
+    // 这里只有一个led，可以直接存入全局变量。多个设备的时候需要先找到设备再存入
+    flip->private_data = &newchrled;  
     return 0;
 }
 
